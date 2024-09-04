@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre o Lucas</title>
+    <!-- Inclua o CSS do Bootstrap para estilização -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Seu CSS personalizado -->
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .message.success {
+            color: green;
+        }
+        .message.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Qual é a comida preferida do Lucas?</h1>
+        <form id="quizForm" class="text-center">
+            <input type="text" id="resposta" class="form-control mb-2" placeholder="Digite sua resposta aqui..." required>
+            <button type="button" onclick="verificarResposta()" class="btn btn-primary">Enviar</button>
+        </form>
+        
+        <div id="mensagem" class="message text-center"></div>
+    </div>
+
+    <!-- Inclua o JavaScript do Bootstrap (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para verificar a resposta -->
+    <script>
+        function verificarResposta() {
+            // Obtém o valor da resposta do usuário
+            const resposta = document.getElementById('resposta').value.trim().toLowerCase();
+            const mensagem = document.getElementById('mensagem');
+
+            // Verifica a resposta e exibe a mensagem apropriada
+            if (resposta === 'lasanha') {
+                mensagem.textContent = 'Parabéns, você ama mesmo o Lucas!';
+                mensagem.className = 'message success';
+            } else {
+                mensagem.textContent = 'O Lucas está decepcionado!';
+                mensagem.className = 'message error';
+            }
+        }
+    </script>
+</body>
+</html>
