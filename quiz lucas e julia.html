@@ -1,61 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz sobre o Lucas</title>
-    <!-- Inclua o CSS do Bootstrap para estilização -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Seu CSS personalizado -->
-    <style>
-        .container {
-            margin-top: 20px;
-        }
-        .message {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .message.success {
-            color: green;
-        }
-        .message.error {
-            color: red;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfólio - Lucas Lopes</title>
+    <link rel="stylesheet" href="css/Untitled-1.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="text-center">Qual é a comida preferida do Lucas?</h1>
-        <form id="quizForm" class="text-center">
-            <input type="text" id="resposta" class="form-control mb-2" placeholder="Digite sua resposta aqui..." required>
-            <button type="button" onclick="verificarResposta()" class="btn btn-primary">Enviar</button>
-        </form>
-        
-        <div id="mensagem" class="message text-center"></div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Olá, eu sou o Lucas Lopes</h1>
+            <p>Desenvolvedor Full-Stack em formação. Apaixonado por tecnologia e soluções inovadoras.</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </header>
 
-    <!-- Inclua o JavaScript do Bootstrap (opcional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um estudante de Análise e Desenvolvimento de Sistemas, com interesse em desenvolvimento web. Tenho experiência em HTML, CSS, JavaScript e sempre busco aprender novas tecnologias e aprimorar minhas habilidades.</p>
+    </section>
 
-    <!-- Script para verificar a resposta -->
-    <script>
-        function verificarResposta() {
-            // Obtém o valor da resposta do usuário
-            const resposta = document.getElementById('resposta').value.trim().toLowerCase();
-            const mensagem = document.getElementById('mensagem');
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+                <a href="css/11.jpg">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+                <a href="css/12.jpg">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 3</h3>
+                <p>Descrição do projeto 3.</p>
+                <a href="css/[ConkaHub] FEED outubro (Story).jpg">Ver projeto</a>
+            </div>
+        </div>
+    </section>
 
-            // Verifica a resposta e exibe a mensagem apropriada
-            if (resposta === 'lasanha') {
-                mensagem.textContent = 'Parabéns, você ama mesmo o Lucas!';
-                mensagem.className = 'message success';
-            } else {
-                mensagem.textContent = 'O Lucas está decepcionado!';
-                mensagem.className = 'message error';
-            }
-        }
-    </script>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato através das minhas redes sociais ou envie um email diretamente.</p>
+        <ul>
+            <li>Email: lucaslopes@email.com</li>
+            <li>LinkedIn: <a href="#">linkedin.com/in/lucaslopes</a></li>
+            <li>GitHub: <a href="#">github.com/conkadev</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lucas Lopes. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
-</html>
+
+</html><div class="hero">
+    <img src="css/conka hub.png" alt="">
+    <h1>Olá, eu sou o Lucas Lopes</h1>
+    <p>Desenvolvedor Full-Stack em formação. Apaixonado por tecnologia e soluções inovadoras.</p>
+    <a href="#projetos" class="btn">Ver Projetos</a>
+
+
+
